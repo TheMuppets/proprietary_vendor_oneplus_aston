@@ -1,0 +1,419 @@
+<?xml version="1.0" ?>
+<!--Copyright 2019-2021 (c) Pixelworks Inc. All Rightes Reserved.
+Pixelworks Inc. Company Confidential Strictly Private-->
+<IrisData>
+
+<Information Version="260" />
+
+<GoldenFwPath>/odm/etc</GoldenFwPath>
+<CalibratedFwPath>/mnt/vendor/persist/display</CalibratedFwPath>
+
+<SoftHdrMethod>0</SoftHdrMethod>
+<UseIrisCSCFeatureEnable>true</UseIrisCSCFeatureEnable>
+<PxlwGameMemcDebugEnable>true</PxlwGameMemcDebugEnable>
+
+<!--Pixelworks dimming function-->
+<PxlwDimmingEnabled>false</PxlwDimmingEnabled>
+
+<!--Pixelworks Iris color mode list-->
+<IrisColorModeList>
+       <ColorMode SoftIris="1">1</ColorMode>
+       <ColorMode SoftIris="4">4</ColorMode>
+       <ColorMode SoftIris="7">6</ColorMode>
+       <ColorMode SoftIris="13">12</ColorMode>
+       <ColorMode SoftIris="16">5</ColorMode>
+       <ColorMode SoftIris="21">2</ColorMode>
+       <ColorMode SoftIris="22">3</ColorMode>
+       <ColorMode SoftIris="52">52</ColorMode>
+       <ColorMode SoftIris="1000">129</ColorMode>
+</IrisColorModeList>
+
+<!--Pixelworks Soft Iris color mode list-->
+<SoftIrisColorModeList DefaultMode="1">
+	<ColorMode ColorMode="0" RenderIntent="0">1</ColorMode>
+	<ColorMode ColorMode="7" RenderIntent="0">13</ColorMode>
+	<ColorMode ColorMode="7" RenderIntent="256">4</ColorMode>
+	<ColorMode ColorMode="7" RenderIntent="303">25</ColorMode> <!-- srgb nature-->
+	<ColorMode ColorMode="9" RenderIntent="304">13</ColorMode> <!-- p3 nature-->
+	<ColorMode ColorMode="7" RenderIntent="257">4</ColorMode>
+	<ColorMode ColorMode="7" RenderIntent="258">16</ColorMode>
+	<ColorMode ColorMode="7" RenderIntent="301">4</ColorMode><!-- srgb profession-->
+	<ColorMode ColorMode="9" RenderIntent="302">16</ColorMode><!-- p3 profession-->
+	<ColorMode ColorMode="7" RenderIntent="259">7</ColorMode>
+	<ColorMode ColorMode="7" RenderIntent="307">25</ColorMode> <!-- srgb vivid-->
+	<ColorMode ColorMode="9" RenderIntent="308">7</ColorMode> <!-- p3 vivid-->
+        <ColorMode ColorMode="9" RenderIntent="309">16</ColorMode>
+        <ColorMode ColorMode="9" RenderIntent="310">13</ColorMode>
+        <ColorMode ColorMode="7" RenderIntent="311">16</ColorMode>
+	<ColorMode ColorMode="7" RenderIntent="312">13</ColorMode>
+	<ColorMode ColorMode="7" RenderIntent="260">1000</ColorMode>
+	<ColorMode ColorMode="7" RenderIntent="261">1000</ColorMode>
+	<ColorMode ColorMode="7" RenderIntent="262">1000</ColorMode>
+	<ColorMode ColorMode="7" RenderIntent="263">1000</ColorMode>
+	<ColorMode ColorMode="7" RenderIntent="264">1000</ColorMode>
+	<ColorMode ColorMode="7" RenderIntent="300">1000</ColorMode>
+	<ColorMode ColorMode="9" RenderIntent="0">16</ColorMode>
+	<ColorMode ColorMode="9" RenderIntent="256">16</ColorMode>
+</SoftIrisColorModeList>
+
+<!--MCF of irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel primary display-->
+<McfList  Display="0" Panel="0x1000E">
+	<McfCheck Index="0">/odm/etc/inparm/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel/mcfCheck.txt</McfCheck>
+	<McfCheck Index="1">/odm/etc/inparm/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel/mcfCheck_low.txt</McfCheck>
+        <McfCheck Index="2">/odm/etc/inparm/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel/mcfCheck_2nit.txt</McfCheck>
+	<Mcf Index="0" Type="8" Check="0">/mnt/vendor/persist/display/pxlw_iris5.mcf</Mcf>
+	<Mcf Index="1" Type="8" Check="0">/mnt/vendor/persist/display/pxlw_iris5_std.mcf</Mcf>
+	<Mcf Index="2" Type="8" Check="0">/mnt/vendor/persist/display/pxlw_iris5_std2.mcf</Mcf>
+	<Mcf Index="3" Type="8" Check="1">/mnt/vendor/persist/display/pxlw_iris5_std2_low.mcf</Mcf>
+        <Mcf Index="4" Type="8" Check="2">/mnt/vendor/persist/display/pxlw_iris5_std2_2nit.mcf</Mcf>
+</McfList>
+
+<!--Soft Iris panel calibration of irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel-->
+<!--Gamut4 is multiple brightness-->
+<!--Gamut13 is multiple brightness-->
+<!--Gamut16 is multiple brightness-->
+<!--Gamut52 is EDR-->
+<InParmList Chip="5" Panel="0x1000E" Display="0" Version="112">
+	<InParm Index="1" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="1">/odm/etc/inparm/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm2.txt</InParm>
+	<InParm Index="4" SubIndex="0" ColorTemp="6500" Pcs="2" Mcf="1" Interpolation="10">/odm/etc/inparm/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm5.txt</InParm>
+	<InParm Index="4" SubIndex="1" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="10">/odm/etc/inparm/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm5_low.txt</InParm>
+	<InParm Index="4" SubIndex="2" ColorTemp="6500" Pcs="2" Mcf="4" Interpolation="10">/odm/etc/inparm/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm5_2nit.txt</InParm>
+	<InParm Index="4" SubIndex="3" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="10">/odm/etc/inparm/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm2.txt</InParm>
+	<InParm Index="7" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="1">/odm/etc/inparm/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm8.txt</InParm>
+	<InParm Index="13" SubIndex="0" ColorTemp="6500" Pcs="2" Mcf="2" Interpolation="10">/odm/etc/inparm/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm14.txt</InParm>
+	<InParm Index="13" SubIndex="1" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="10">/odm/etc/inparm/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm14_low.txt</InParm>
+	<InParm Index="13" SubIndex="2" ColorTemp="6500" Pcs="2" Mcf="4" Interpolation="10">/odm/etc/inparm/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm14_2nit.txt</InParm>
+	<InParm Index="13" SubIndex="3" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="10">/odm/etc/inparm/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm2.txt</InParm>
+	<InParm Index="16" SubIndex="0" ColorTemp="6500" Pcs="2" Mcf="1" Interpolation="10">/odm/etc/inparm/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm17.txt</InParm>
+	<InParm Index="16" SubIndex="1" ColorTemp="6500" Pcs="2" Mcf="3" Interpolation="10">/odm/etc/inparm/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm17_low.txt</InParm>
+	<InParm Index="16" SubIndex="2" ColorTemp="6500" Pcs="2" Mcf="4" Interpolation="10">/odm/etc/inparm/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm17_2nit.txt</InParm>
+	<InParm Index="16" SubIndex="3" ColorTemp="6500" Pcs="2" Mcf="0" Interpolation="10">/odm/etc/inparm/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm2.txt</InParm>
+	<InParm Index="21" ColorTemp="6500" Pcs="2" Mcf="2" Interpolation="1">/odm/etc/inparm/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm22.txt</InParm>
+	<InParm Index="22" ColorTemp="6500" Pcs="2" Mcf="2" Interpolation="1">/odm/etc/inparm/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm23.txt</InParm>
+	<InParm Index="52" SubIndex="0" ColorTemp="7911" Pcs="2" Mcf="0" Interpolation="10">/odm/etc/inparm/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm_edr_linear.txt</InParm>
+	<InParm Index="52" SubIndex="1" ColorTemp="7911" Pcs="2" Mcf="0" Interpolation="10">/odm/etc/inparm/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm_edr_20_tm.txt</InParm>
+	<InParm Index="52" SubIndex="2" ColorTemp="7911" Pcs="2" Mcf="0" Interpolation="10">/odm/etc/inparm/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm_edr_20_apl.txt</InParm>
+	<InParm Index="52" SubIndex="3" ColorTemp="7911" Pcs="2" Mcf="0" Interpolation="10">/odm/etc/inparm/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm_edr_25_tm.txt</InParm>
+	<InParm Index="52" SubIndex="4" ColorTemp="7911" Pcs="2" Mcf="0" Interpolation="10">/odm/etc/inparm/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm_edr_25_apl.txt</InParm>
+	<InParm Index="52" SubIndex="5" ColorTemp="7911" Pcs="2" Mcf="0" Interpolation="10">/odm/etc/inparm/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm_edr_30_tm.txt</InParm>
+	<InParm Index="52" SubIndex="6" ColorTemp="7911" Pcs="2" Mcf="0" Interpolation="10">/odm/etc/inparm/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm_edr_30_apl.txt</InParm>
+</InParmList>
+
+<!--Iris7 Prime panel calibration of iris7_AA551_P_3_A0004_dsc_cmd_mode_panel-->
+<InParmList Chip="519" Panel="0x1000E" Display="0" Version="112">
+    <InParm Index="1" Opt="1" Pcs="2" Mcf="0">/odm/etc/inparm/iris7_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm2.txt</InParm>
+    <InParm Index="2" Opt="2" Pcs="2" Mcf="2">/odm/etc/inparm/iris7_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm14.txt</InParm>
+    <InParm Index="3" Opt="3" Pcs="2" Mcf="2">/odm/etc/inparm/iris7_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm23.txt</InParm>
+    <InParm Index="4" Opt="4" Pcs="2" Mcf="1">/odm/etc/inparm/iris7_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm5.txt</InParm>
+    <InParm Index="5" Opt="5" Pcs="2" Mcf="1">/odm/etc/inparm/iris7_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm17.txt</InParm>
+    <InParm Index="6" Opt="6" Pcs="2" Mcf="0">/odm/etc/inparm/iris7_AA551_P_3_A0004_dsc_cmd_mode_panel/inParm8.txt</InParm>
+    <InParm Index="7" Interpolation="1">2/3</InParm>
+    <InParm Index="12" Interpolation="2">2/1</InParm>
+
+
+</InParmList>
+
+<PxlwGameMemcGroup>
+
+<!--osd_Gameofpeace-->
+<PxlwGameMemcList Count="5" Game="0,5,13,15,19,">
+	<PxlwGameMemc LowLatencyMode="1" Count="20">
+		<registers>f2010070,f2011020,f21c0030,f21c0034,f21c00d4,f21c00d8,f21c017c,f21c01a8,f21401d0,f21401d4,f21401d8,f214015c,f214014c,f2140158,f215ff00,f2180020,f2180080,f2180084,f2180088,f219ff00</registers>
+		<values>8,3,8124,90f27,428c8d2,700013f2,8818,13,21000e18,81024e18,80300018,44440440,4440840,18ffffff,1,4445555f,1,2d50145,2cb013b,100</values>
+	</PxlwGameMemc>
+	<PxlwGameMemc LowLatencyMode="2" Count="20">
+		<registers>f2010070,f2011020,f21c0030,f21c0034,f21c00d4,f21c00d8,f21c017c,f21c01a8,f21401d0,f21401d4,f21401d8,f214015c,f214014c,f2140158,f215ff00,f2180020,f2180080,f2180084,f2180088,f219ff00</registers>
+		<values>8,3,8124,90f27,428c8d2,700013f2,8818,13,21000e18,81024e18,80300018,44440440,4440840,18ffffff,1,4445555f,1,2d50145,2cb013b,100</values>
+	</PxlwGameMemc>
+	<PxlwGameMemc LowLatencyMode="3" Count="20">
+		<registers>f2010070,f2011020,f21c0030,f21c0034,f21c00d4,f21c00d8,f21c017c,f21c01a8,f21401d0,f21401d4,f21401d8,f214015c,f214014c,f2140158,f215ff00,f2180020,f2180080,f2180084,f2180088,f219ff00</registers>
+		<values>d8,3,8224,90524,488c8d2,70001102,148818,13,21000e1b,81024e1b,80300019,44440448,4440880,18a8ffff,1,4455555f,1,38a019c,37e0190,100</values>
+	</PxlwGameMemc>
+	<PxlwGameMemcOSD OSDMode="0" Count="7">
+		<registers>f21400e8,f21401e4,f21401ec,f215ff00,f21c0070,f21c00dc,f21c01a8</registers>
+		<values>67b444c1,12429f43,a180a18,1,2449,44444093,13</values>
+	</PxlwGameMemcOSD>
+</PxlwGameMemcList>
+
+<!--osd_others(disable) -->
+<PxlwGameMemcList Count="21" Game="1,2,3,4,6,7,8,9,10,11,12,14,16,17,18,20,21,22,23,24,25">
+	<PxlwGameMemc LowLatencyMode="1" Count="17">
+		<registers>f2010070,f2011020,f21c0030,f21c0034,f21c00d4,f21c00d8,f21c017c,f21c01a8,f21401d0,f21401d4,f21401d8,f214015c,f214014c,f2140158,f215ff00,f2180020,f219ff00</registers>
+		<values>8,3,8124,90f27,428c8d2,700013f2,8818,13,21000e18,81024e18,80300018,44440440,4440840,18ffffff,1,4445555f,100</values>
+	</PxlwGameMemc>
+	<PxlwGameMemc LowLatencyMode="2" Count="17">
+		<registers>f2010070,f2011020,f21c0030,f21c0034,f21c00d4,f21c00d8,f21c017c,f21c01a8,f21401d0,f21401d4,f21401d8,f214015c,f214014c,f2140158,f215ff00,f2180020,f219ff00</registers>
+		<values>8,3,8124,90f27,428c8d2,700013f2,8818,13,21000e18,81024e18,80300018,44440440,4440840,18ffffff,1,4445555f,100</values>
+	</PxlwGameMemc>
+	<PxlwGameMemc LowLatencyMode="3" Count="17">
+		<registers>f2010070,f2011020,f21c0030,f21c0034,f21c00d4,f21c00d8,f21c017c,f21c01a8,f21401d0,f21401d4,f21401d8,f214015c,f214014c,f2140158,f215ff00,f2180020,f219ff00</registers>
+		<values>d8,3,8224,90524,488c8d2,70001102,148818,13,21000e1b,81024e1b,80300019,44440448,4440880,18a8ffff,1,4455555f,100</values>
+	</PxlwGameMemc>
+	<PxlwGameMemcOSD OSDMode="0" Count="11">
+		<registers>f21400e8,f21401e4,f21401ec,f215ff00,f21c0070,f21c00dc,f21c01a8,f2180080,f2180084,f2180088,f219ff00</registers>
+		<values>67b44441,12429f42,a180a18,1,2448,44444083,13,0,2d50145,2cb013b,100</values>
+	</PxlwGameMemcOSD>
+</PxlwGameMemcList>
+</PxlwGameMemcGroup>
+
+<!--game 10 wangzherongyao-->
+<PxlwSuperResolutionRateList Id="0" Game="10">
+	<PxlwSuperResolution Input="640x1432" Output="1264x2780" Filter="30-30" Count="6">8,12,7,10,1,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="648x1424" Output="1264x2780" Filter="30-30" Count="6">8,12,7,10,1,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="720x1504" Output="1264x2780" Filter="30-30" Count="6">8,12,7,10,1,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="804x1792" Output="1264x2780" Filter="30-30" Count="6">7,12,7,9,1,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="808x1780" Output="1264x2780" Filter="30-30" Count="6">7,12,7,9,1,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="964x2152" Output="1264x2780" Filter="30-30" Count="6">7,12,7,9,1,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="972x2136" Output="1264x2780" Filter="30-30" Count="6">7,12,7,9,1,2</PxlwSuperResolution>
+</PxlwSuperResolutionRateList>
+
+<!--game 0 hepingjinying-->
+<PxlwSuperResolutionRateList Id="1" Game="0">
+	<PxlwSuperResolution Input="720x1600" Output="1264x2780" Count="6">9,5,7,7,3,4</PxlwSuperResolution>
+	<PxlwSuperResolution Input="720x1584" Output="1264x2780" Count="6">9,5,7,7,3,4</PxlwSuperResolution>
+	<PxlwSuperResolution Input="720x1576" Output="1264x2780" Count="6">9,5,7,7,3,4</PxlwSuperResolution>
+	<PxlwSuperResolution Input="1080x2400" Output="1264x2780" Count="6">9,5,7,7,3,4</PxlwSuperResolution>
+	<PxlwSuperResolution Input="720x1280" Output="1264x2780" Count="6">9,5,7,7,3,4</PxlwSuperResolution>
+</PxlwSuperResolutionRateList>
+
+<!--game 3 yuanshen-->
+<PxlwSuperResolutionRateList Id="2" Game="3">
+	<PxlwSuperResolution Input="734x1614" Output="1264x2780" Count="6">10,12,7,10,6,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="796x1780" Output="1264x2780" Count="6">10,12,7,10,6,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="812x1780" Output="1264x2780" Count="6">10,12,7,10,6,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="872x1920" Output="1264x2780" Count="6">10,12,7,10,6,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="860x1920" Output="1264x2780" Count="6">10,12,7,10,6,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="1080x2376" Output="1264x2780" Count="6">10,12,7,10,6,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="1264x2780" Output="1264x2780" Count="6">10,12,7,10,6,2</PxlwSuperResolution>
+</PxlwSuperResolutionRateList>
+
+<!--game 16 yingxionglianmeng-->
+<PxlwSuperResolutionRateList Id="3" Game="16">
+	<PxlwSuperResolution Input="480x1072" Output="1264x2780" Count="6">8,12,7,10,1,4</PxlwSuperResolution>
+	<PxlwSuperResolution Input="480x1056" Output="1264x2780" Count="6">8,12,7,10,1,4</PxlwSuperResolution>
+	<PxlwSuperResolution Input="720x1620" Output="1264x2780" Count="6">7,12,7,9,1,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="720x1584" Output="1264x2780" Count="6">7,12,7,9,1,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="900x2012" Output="1264x2780" Count="6">7,12,7,9,1,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="900x1980" Output="1264x2780" Count="6">7,12,7,9,1,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="1080x2412" Output="1264x2780" Count="6">7,12,8,9,1,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="1080x2376" Output="1264x2780" Count="6">7,12,8,9,1,2</PxlwSuperResolution>
+</PxlwSuperResolutionRateList>
+
+<!--game 13 chuanyuehuoxian-->
+<PxlwSuperResolutionRateList Id="4" Game="13">
+	<PxlwSuperResolution Input="720x1608" Output="1264x2780" Count="6">7,12,7,9,1,2</PxlwSuperResolution>
+        <PxlwSuperResolution Input="720x1508" Output="1264x2780" Count="6">7,12,7,9,1,2</PxlwSuperResolution>
+</PxlwSuperResolutionRateList>
+
+<!--game 9 QQ feiche-->
+<PxlwSuperResolutionRateList Id="5" Game="9">
+	<PxlwSuperResolution Input="508x1136" Output="1264x2780" Count="6">9,5,7,7,3,4</PxlwSuperResolution>
+	<PxlwSuperResolution Input="516x1136" Output="1264x2780" Count="6">9,5,7,7,3,4</PxlwSuperResolution>
+	<PxlwSuperResolution Input="572x1280" Output="1264x2780" Count="6">9,5,7,7,3,4</PxlwSuperResolution>
+	<PxlwSuperResolution Input="584x1280" Output="1264x2780" Count="6">9,5,7,7,3,4</PxlwSuperResolution>
+	<PxlwSuperResolution Input="860x1920" Output="1264x2780" Count="6">8,12,7,9,1,1</PxlwSuperResolution>
+	<PxlwSuperResolution Input="872x1920" Output="1264x2780" Count="6">8,12,7,9,1,1</PxlwSuperResolution>
+</PxlwSuperResolutionRateList>
+
+<!--game 11 guangyu-->
+<PxlwSuperResolutionRateList Id="6" Game="11">
+	<PxlwSuperResolution Input="1080x2376" Output="1264x2780" Count="6">7,12,8,9,1,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="1264x2780" Output="1264x2780" Count="6">7,12,8,9,1,2</PxlwSuperResolution>
+</PxlwSuperResolutionRateList>
+
+<!--game 2 tianyamingyuedao-->
+<PxlwSuperResolutionRateList Id="7" Game="2">
+	<PxlwSuperResolution Input="1080x2376" Output="1264x2780" Count="6">9,5,7,7,3,4</PxlwSuperResolution>
+	<PxlwSuperResolution Input="1264x2780" Output="1264x2780" Count="6">9,5,7,7,3,4</PxlwSuperResolution>
+</PxlwSuperResolutionRateList>
+
+<!--game 153 nishuihan-->
+<PxlwSuperResolutionRateList Id="8" Game="153">
+	<PxlwSuperResolution Input="1080x2376" Output="1264x2780" Count="6">9,5,7,7,3,4</PxlwSuperResolution>
+	<PxlwSuperResolution Input="1264x2780" Output="1264x2780" Count="6">9,5,7,7,3,4</PxlwSuperResolution>
+</PxlwSuperResolutionRateList>
+
+<!--game 155 xingqiongtiedao-->
+<PxlwSuperResolutionRateList Id="9" Game="155">
+	<PxlwSuperResolution Input="1080x2376" Output="1264x2780" Count="6">9,5,7,7,3,4</PxlwSuperResolution>
+	<PxlwSuperResolution Input="1264x2780" Output="1264x2780" Count="6">9,5,7,7,3,4</PxlwSuperResolution>
+</PxlwSuperResolutionRateList>
+
+<!--game 255 Default-->
+<PxlwSuperResolutionRateList Id="8" Game="255">
+    <PxlwSuperResolution Input="480x1072" Output="1080x2412" Count="6">9,12,7,9,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="480x1072" Output="1264x2780" Count="6">9,12,8,9,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="480x1072" Output="1440x3216" Count="6">9,12,8,10,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="540x1208" Output="1080x2412" Count="6">9,12,7,9,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="540x1208" Output="1264x2780" Count="6">9,12,8,9,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="540x1208" Output="1440x3216" Count="6">9,12,8,10,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="640x1432" Output="1080x2412" Count="6">8,12,7,9,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="640x1432" Output="1264x2780" Count="6">8,12,8,9,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="640x1432" Output="1440x3216" Count="6">8,12,8,10,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="720x1608" Output="1080x2412" Count="6">7,12,7,8,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="720x1608" Output="1264x2780" Count="6">7,12,8,8,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="720x1608" Output="1440x3216" Count="6">7,12,8,9,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="800x1788" Output="1080x2412" Count="6">7,12,7,8,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="800x1788" Output="1264x2780" Count="6">7,12,8,8,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="800x1788" Output="1440x3216" Count="6">7,12,8,9,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="900x2012" Output="1080x2412" Count="6">7,12,7,8,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="900x2012" Output="1264x2780" Count="6">7,12,8,8,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="900x2012" Output="1440x3216" Count="6">7,12,8,9,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="1080x2412" Output="1080x2412" Count="6">7,9,8,8,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="1080x2412" Output="1264x2780" Count="6">7,12,8,9,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="1080x2412" Output="1440x3216" Count="6">7,12,8,9,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="1264x2780" Output="1264x2780" Count="6">7,9,8,8,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="1264x2780" Output="1440x3216" Count="6">7,12,8,9,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="1440x2772" Output="1440x3216" Count="6">7,9,8,8,1,2</PxlwSuperResolution>
+</PxlwSuperResolutionRateList>
+
+<!--game 10 wangzherongyao-->
+<PxlwMemcSuperResolutionRateList Id="0" Game="10">
+	<PxlwSuperResolution Input="640x1432" Output="1264x2780" Filter="30-30" Count="6">8,12,7,10,1,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="648x1424" Output="1264x2780" Filter="30-30" Count="6">8,12,7,10,1,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="720x1504" Output="1264x2780" Filter="30-30" Count="6">8,12,7,10,1,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="804x1792" Output="1264x2780" Filter="30-30" Count="6">7,12,7,9,1,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="808x1780" Output="1264x2780" Filter="30-30" Count="6">7,12,7,9,1,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="964x2152" Output="1264x2780" Filter="30-30" Count="6">7,12,7,9,1,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="972x2136" Output="1264x2780" Filter="30-30" Count="6">7,12,7,9,1,2</PxlwSuperResolution>
+</PxlwMemcSuperResolutionRateList>
+
+<!--game 0 hepingjinying-->
+<PxlwMemcSuperResolutionRateList Id="1" Game="0">
+	<PxlwSuperResolution Input="720x1600" Output="1264x2780" Count="6">9,5,7,7,3,4</PxlwSuperResolution>
+	<PxlwSuperResolution Input="720x1584" Output="1264x2780" Count="6">9,5,7,7,3,4</PxlwSuperResolution>
+	<PxlwSuperResolution Input="720x1576" Output="1264x2780" Count="6">9,5,7,7,3,4</PxlwSuperResolution>
+	<PxlwSuperResolution Input="1080x2400" Output="1264x2780" Count="6">9,5,7,7,3,4</PxlwSuperResolution>
+	<PxlwSuperResolution Input="720x1280" Output="1264x2780" Count="6">9,5,7,7,3,4</PxlwSuperResolution>
+</PxlwMemcSuperResolutionRateList>
+
+<!--game 3 yuanshen-->
+<PxlwMemcSuperResolutionRateList Id="2" Game="3">
+	<PxlwSuperResolution Input="796x1780" Output="1264x2780" Count="6">10,12,7,10,6,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="812x1780" Output="1264x2780" Count="6">10,12,7,10,6,2</PxlwSuperResolution>
+        <PxlwSuperResolution Input="872x1920" Output="1264x2780" Count="6">10,12,7,10,6,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="860x1920" Output="1264x2780" Count="6">10,12,7,10,6,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="1080x2376" Output="1264x2780" Count="6">10,12,7,10,6,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="1264x2780" Output="1264x2780" Count="6">10,12,7,10,6,2</PxlwSuperResolution>
+</PxlwMemcSuperResolutionRateList>
+
+<!--game 16 yingxionglianmeng-->
+<PxlwMemcSuperResolutionRateList Id="3" Game="16">
+	<PxlwSuperResolution Input="480x1072" Output="1264x2780" Count="6">8,12,7,10,1,4</PxlwSuperResolution>
+	<PxlwSuperResolution Input="480x1056" Output="1264x2780" Count="6">8,12,7,10,1,4</PxlwSuperResolution>
+	<PxlwSuperResolution Input="720x1620" Output="1264x2780" Count="6">7,12,7,9,1,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="720x1584" Output="1264x2780" Count="6">7,12,7,9,1,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="900x2012" Output="1264x2780" Count="6">7,12,7,9,1,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="900x1980" Output="1264x2780" Count="6">7,12,7,9,1,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="1080x2412" Output="1264x2780" Count="6">7,12,8,9,1,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="1080x2376" Output="1264x2780" Count="6">7,12,8,9,1,2</PxlwSuperResolution>
+</PxlwMemcSuperResolutionRateList>
+
+<!--game 13 chuanyuehuoxian-->
+<PxlwMemcSuperResolutionRateList Id="4" Game="13">
+	<PxlwSuperResolution Input="720x1608" Output="1264x2780" Count="6">7,12,7,9,1,2</PxlwSuperResolution>
+        <PxlwSuperResolution Input="720x1508" Output="1264x2780" Count="6">7,12,7,9,2,2</PxlwSuperResolution>
+</PxlwMemcSuperResolutionRateList>
+
+<!--game 9 QQ feiche-->
+<PxlwMemcSuperResolutionRateList Id="5" Game="9">
+	<PxlwSuperResolution Input="508x1136" Output="1264x2780" Count="6">9,5,7,7,3,4</PxlwSuperResolution>
+	<PxlwSuperResolution Input="516x1136" Output="1264x2780" Count="6">9,5,7,7,3,4</PxlwSuperResolution>
+	<PxlwSuperResolution Input="572x1280" Output="1264x2780" Count="6">9,5,7,7,3,4</PxlwSuperResolution>
+	<PxlwSuperResolution Input="584x1280" Output="1264x2780" Count="6">9,5,7,7,3,4</PxlwSuperResolution>
+	<PxlwSuperResolution Input="860x1920" Output="1264x2780" Count="6">8,12,7,9,1,1</PxlwSuperResolution>
+	<PxlwSuperResolution Input="872x1920" Output="1264x2780" Count="6">8,12,7,9,1,1</PxlwSuperResolution>
+</PxlwMemcSuperResolutionRateList>
+
+<!--game 11 guangyu-->
+<PxlwMemcSuperResolutionRateList Id="6" Game="11">
+	<PxlwSuperResolution Input="1080x2376" Output="1264x2780" Count="6">7,12,8,9,1,2</PxlwSuperResolution>
+	<PxlwSuperResolution Input="1264x2780" Output="1264x2780" Count="6">7,12,8,9,1,2</PxlwSuperResolution>
+</PxlwMemcSuperResolutionRateList>
+
+<!--game 2 tianyamingyuedao-->
+<PxlwMemcSuperResolutionRateList Id="7" Game="2">
+	<PxlwSuperResolution Input="1080x2376" Output="1264x2780" Count="6">9,5,7,7,3,4</PxlwSuperResolution>
+	<PxlwSuperResolution Input="1264x2780" Output="1264x2780" Count="6">9,5,7,7,3,4</PxlwSuperResolution>
+</PxlwMemcSuperResolutionRateList>
+
+<!--game 153 nishuihan-->
+<PxlwMemcSuperResolutionRateList Id="8" Game="153">
+	<PxlwSuperResolution Input="1080x2376" Output="1264x2780" Count="6">9,5,7,7,3,4</PxlwSuperResolution>
+	<PxlwSuperResolution Input="1264x2780" Output="1264x2780" Count="6">9,5,7,7,3,4</PxlwSuperResolution>
+</PxlwMemcSuperResolutionRateList>
+
+<!--game 155 xingqiongtiedao-->
+<PxlwMemcSuperResolutionRateList Id="9" Game="155">
+	<PxlwSuperResolution Input="1080x2376" Output="1264x2780" Count="6">9,5,7,7,3,4</PxlwSuperResolution>
+	<PxlwSuperResolution Input="1264x2780" Output="1264x2780" Count="6">9,5,7,7,3,4</PxlwSuperResolution>
+</PxlwMemcSuperResolutionRateList>
+
+<!--game 255 Default-->
+<PxlwMemcSuperResolutionRateList Id="8" Game="255">
+    <PxlwSuperResolution Input="480x1072" Output="1080x2412" Count="6">9,12,7,9,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="480x1072" Output="1264x2780" Count="6">9,12,8,9,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="480x1072" Output="1440x3216" Count="6">9,12,8,10,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="540x1208" Output="1080x2412" Count="6">9,12,7,9,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="540x1208" Output="1264x2780" Count="6">9,12,8,9,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="540x1208" Output="1440x3216" Count="6">9,12,8,10,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="640x1432" Output="1080x2412" Count="6">8,12,7,9,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="640x1432" Output="1264x2780" Count="6">8,12,8,9,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="640x1432" Output="1440x3216" Count="6">8,12,8,10,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="720x1608" Output="1080x2412" Count="6">7,12,7,8,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="720x1608" Output="1264x2780" Count="6">7,12,8,8,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="720x1608" Output="1440x3216" Count="6">7,12,8,9,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="800x1788" Output="1080x2412" Count="6">7,12,7,8,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="800x1788" Output="1264x2780" Count="6">7,12,8,8,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="800x1788" Output="1440x3216" Count="6">7,12,8,9,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="900x2012" Output="1080x2412" Count="6">7,12,7,8,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="900x2012" Output="1264x2780" Count="6">7,12,8,8,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="900x2012" Output="1440x3216" Count="6">7,12,8,9,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="1080x2412" Output="1080x2412" Count="6">7,9,8,8,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="1080x2412" Output="1264x2780" Count="6">7,12,8,9,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="1080x2412" Output="1440x3216" Count="6">7,12,8,9,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="1264x2780" Output="1264x2780" Count="6">7,9,8,8,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="1264x2780" Output="1440x3216" Count="6">7,12,8,9,1,2</PxlwSuperResolution>
+    <PxlwSuperResolution Input="1440x2772" Output="1440x3216" Count="6">7,9,8,8,1,2</PxlwSuperResolution>
+</PxlwMemcSuperResolutionRateList>
+
+<PxlwSdr2hdrGroup>
+
+<!--all off-->
+<PxlwSdr2hdrList Id="0">
+	<PxlwSdr2hdrInfo Scurve="0" />
+</PxlwSdr2hdrList>
+
+<!--video scene-->
+<PxlwSdr2hdrList Id="1">
+	<PxlwSdr2hdrInfo ColorGamut="7" ColorGains="0x2000" Scurve="0" />
+</PxlwSdr2hdrList>
+
+<!--enhance video scene-->
+<PxlwSdr2hdrList Id="2">
+	<PxlwSdr2hdrInfo ColorGamut="7" ColorGains="0x2000" Scurve="0" />
+</PxlwSdr2hdrList>
+
+<!--game scene-->
+<PxlwSdr2hdrList Id="3">
+	<PxlwSdr2hdrInfo ColorGamut="7" ColorGains="0x4000" Scurve="0" />
+</PxlwSdr2hdrList>
+
+<!--和平精英EDR-->
+<PxlwSdr2hdrList Id="31" Game="0" Edr="1">
+	<PxlwSdr2hdrInfo ColorGamut="52" AnalogBypassMode="1" SupportApl="0" />
+</PxlwSdr2hdrList>
+
+<!--原神EDR-->
+<PxlwSdr2hdrList Id="32" Game="3" Edr="1">
+	<PxlwSdr2hdrInfo ColorGamut="52" AnalogBypassMode="1" SupportApl="0" />
+</PxlwSdr2hdrList>
+
+<!--low power EDR-->
+<PxlwSdr2hdrList Id="33" Edr="1">
+	<PxlwSdr2hdrInfo ColorGamut="52" AnalogBypassMode="1" SupportApl="0" />
+</PxlwSdr2hdrList>
+
+</PxlwSdr2hdrGroup>
+
+</IrisData>

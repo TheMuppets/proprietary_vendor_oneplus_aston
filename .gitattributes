@@ -1,1 +1,2 @@
 radio/* filter=lfs diff=lfs merge=lfs -text
+odm/lib64/libarcsoft_turbo_hdr_raw.so filter=lfs diff=lfs merge=lfs -text

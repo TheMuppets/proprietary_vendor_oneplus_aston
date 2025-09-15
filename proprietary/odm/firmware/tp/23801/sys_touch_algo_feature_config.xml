@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<algo>
+    <version>2024092301</version>
+    <device id = "0">
+        <panel id = "0" name="tp/23801/FW_S3910_BOE_HBP.img">
+            <modules id="AlgoParam" enable="true" hint="">
+                <param name="prjId" type="u32" hint="">
+                    <value>23801</value>
+                    <range>0,65530</range>
+                </param>
+                <param name="posPeakThd" type="u32" hint="">
+                    <value>180</value>
+                    <range>0,300</range>
+                </param>
+
+                <param name="fpSpotCenterX" type="u32" hint="">
+                    <value>10112</value>
+                    <range>0,20000</range>
+                </param>
+
+                <param name="fpSpotCenterY" type="u32" hint="">
+                    <value>32400</value>
+                    <range>0,50000</range>
+                </param>
+
+                <param name="fpSpotRxStart" type="u32" hint="">
+                    <value>25</value>
+                    <range>0,50</range>
+                </param>
+
+                <param name="fpSpotRxEnd" type="u32" hint="">
+                    <value>29</value>
+                    <range>0,50</range>
+                </param>
+
+                <param name="fpSpotTxStart" type="u32" hint="">
+                    <value>6</value>
+                    <range>0,50</range>
+                </param>
+
+                <param name="fpSpotTxEnd" type="u32" hint="">
+                    <value>10</value>
+                    <range>0,50</range>
+                </param>
+
+                <param name="fpSpotRadius" type="u32" hint="">
+                    <value>4500</value>
+                    <range>0,2500</range>
+                </param>
+
+                <param name="touchFpAreaNumThd" type="u32" hint="">
+                    <value>14</value>
+                    <range>0,50</range>
+                </param>
+
+                <param name="touchFpUpAreaNumThd" type="u32" hint="">
+                    <value>3</value>
+                    <range>0,50</range>
+                </param>
+
+                <param name="fpPixelDiffThd" type="u32" hint="">
+                    <value>90</value>
+                    <range>0,3000</range>
+                </param>
+
+                <param name="pixelDis" type="u32" hint="">
+                    <value>395</value>
+                    <range>0,500</range>
+                </param>
+
+                <param name="pixelDisFactor" type="u32" hint="">
+                    <value>100</value>
+                    <range>0,250</range>
+                </param>
+
+                <param name="pixelDisFloatFactor" type="u32" hint="">
+                    <value>105</value>
+                    <range>0,250</range>
+                </param>
+
+                <param name="pixelPitchUsed" type="u32" hint="">
+                    <value>564</value>
+                    <range>0,2500</range>
+                </param>
+
+                <param name="rouletteRatio" type="u32" hint="">
+                    <value>23</value>
+                    <range>0,100</range>
+                </param>
+
+                <param name="noiseLength" type="u32" hint="">
+                    <value>1050</value>
+                    <range>0,10000</range>
+                </param>
+
+                <param name="fingerLength" type="u32" hint="">
+                    <value>2256</value>
+                    <range>0,10000</range>
+                </param>
+
+                <param name="relockLength" type="u32" hint="">
+                    <value>1058</value>
+                    <range>0,10000</range>
+                </param>
+
+                <param name="liftLockLength" type="u32" hint="">
+                    <value>1410</value>
+                    <range>0,10000</range>
+                </param>
+
+                <param name="disOffsetCutThd" type="u32" hint="">
+                    <value>30</value>
+                    <range>0,10000</range>
+                </param>
+
+                <param name="disOffsetCutCoef" type="u32" hint="">
+                    <value>10</value>
+                    <range>0,255</range>
+                </param>
+
+                <param name="moveLockMin" type="u32" hint="">
+                    <value>3</value>
+                    <range>0,255</range>
+                </param>
+
+                <param name="rxNumUse" type="u32" hint="">
+                    <value>38</value>
+                    <range>0,50</range>
+                </param>
+
+                <param name="txNumUse" type="u32" hint="">
+                    <value>17</value>
+                    <range>0,50</range>
+                </param>
+
+                <param name="maxMappingX" type="u32" hint="">
+                    <value>20224</value>
+                    <range>0,30000</range>
+                </param>
+
+                <param name="maxMappingY" type="u32" hint="">
+                    <value>44480</value>
+                    <range>0,60000</range>
+                </param>
+
+                <param name="rowGain" type="u32" hint="">
+                    <value>256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256</value>
+                    <range>0,1000</range>
+                </param>
+
+                <param name="colGain" type="u32" hint="">
+                    <value>256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256</value>
+                    <range>0,1000</range>
+                </param>
+
+                <param name="rowCompensate" type="u32" hint="">
+                    <value>0,0,40,90,80,0,0,0,0,0,0,-10,-20,-40,-90,-90,-90,0,0,0,0</value>
+                    <range>0,1000</range>
+                </param>
+
+                <param name="colCompensate" type="u32" hint="">
+                    <value>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-40,-60,-60,-40,0,0,0,0</value>
+                    <range>0,1000</range>
+                </param>
+
+                <param name="palmGraySizeThd" type="u32" hint="">
+                    <value>43</value>
+                    <range>0,300</range>
+                </param>
+
+                <param name="palmBigGraySizeThd" type="u32" hint="">
+                    <value>52</value>
+                    <range>0,300</range>
+                </param>
+
+                <param name="palmPosNodeThd" type="u32" hint="">
+                    <value>140</value>
+                    <range>0,1000</range>
+                </param>
+
+                <param name="palmNegNodeThd" type="u32" hint="">
+                    <value>140</value>
+                    <range>0,1000</range>
+                </param>
+
+                <param name="palmSumNodeThd" type="u32" hint="">
+                    <value>180</value>
+                    <range>0,1500</range>
+                </param>
+
+                <param name="moveLockNoGameMode" type="u32" hint="">
+                    <value>6</value>
+                    <range>0,255</range>
+                </param>
+
+            </modules>
+
+            <modules id="LogLevel" enable="true" hint="">
+                <param name="paramLogLevel" type="u32" hint="">
+                    <value>0</value>
+                    <range>0,10</range>
+                </param>
+            </modules>
+
+            <modules id="FeatureEn" enable="true" hint="">
+                <param name="WATER_ENABLE" type="u32" hint="">
+                    <value>1</value>
+                    <range>0,1</range>
+                </param>
+
+                <param name="ANTI_MISTOUCH_ENABLE" type="u32" hint="">
+                    <value>1</value>
+                    <range>0,1</range>
+                </param>
+
+                <param name="FP_ENABLE" type="u32" hint="">
+                    <value>1</value>
+                    <range>0,1</range>
+                </param>
+
+                <param name="HARD_PRESSURE_ENABLE" type="u32" hint="">
+                    <value>0</value>
+                    <range>0,1</range>
+                </param>
+
+                <param name="NOISE_ENABLE" type="u32" hint="">
+                    <value>1</value>
+                    <range>0,1</range>
+                </param>
+
+                <param name="TEMPERATURE_PROC_EN" type="u32" hint="">
+                    <value>1</value>
+                    <range>0,1</range>
+                </param>
+
+                <param name="GAME_TOUCH_OPT_EN" type="u32" hint="">
+                    <value>1</value>
+                    <range>0,1</range>
+                </param>
+
+                <param name="ROW_GAIN_EN" type="u32" hint="">
+                    <value>0</value>
+                    <range>0,1</range>
+                </param>
+
+                <param name="COL_GAIN_EN" type="u32" hint="">
+                    <value>0</value>
+                    <range>0,1</range>
+                </param>
+
+                <param name="PIXEL_GAIN_EN" type="u32" hint="">
+                    <value>0</value>
+                    <range>0,1</range>
+                </param>
+
+                <param name="NOTCH_GAIN_EN" type="u32" hint="">
+                    <value>0</value>
+                    <range>0,1</range>
+                </param>
+            </modules>
+            <modules id="AFT" enable="true" hint="">
+                <param name="sensorRatioThd" type="u32" hint="">
+                    <value>10</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="sensorWidthThd" type="u32" hint="">
+                    <value>30</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="secondEdgeNoneSumCoef" type="u32" hint="">
+                    <value>31000</value>
+                    <range>0,65535</range>
+                </param>
+                <param name="neighborNodeThd" type="u32" hint="">
+                    <value>60</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="aftTxDirNodeNumThd" type="u32" hint="">
+                    <value>5</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="aftPosNodeThd" type="u32" hint="">
+                    <value>85</value>
+                    <range>0,1000</range>
+                </param>
+            </modules>
+
+        </panel>
+
+
+        <panel id = "1" name="tp/23801/FW_S3910_TIANMA_HBP.img">
+            <modules id="AlgoParam" enable="true" hint="">
+                <param name="prjId" type="u32" hint="">
+                    <value>23801</value>
+                    <range>0,65530</range>
+                </param>
+                <param name="posPeakThd" type="u32" hint="">
+                    <value>180</value>
+                    <range>0,300</range>
+                </param>
+
+                <param name="fpSpotCenterX" type="u32" hint="">
+                    <value>10112</value>
+                    <range>0,20000</range>
+                </param>
+
+                <param name="fpSpotCenterY" type="u32" hint="">
+                    <value>32400</value>
+                    <range>0,50000</range>
+                </param>
+
+                <param name="fpSpotRxStart" type="u32" hint="">
+                    <value>27</value>
+                    <range>0,50</range>
+                </param>
+
+                <param name="fpSpotRxEnd" type="u32" hint="">
+                    <value>30</value>
+                    <range>0,50</range>
+                </param>
+
+                <param name="fpSpotTxStart" type="u32" hint="">
+                    <value>7</value>
+                    <range>0,50</range>
+                </param>
+
+                <param name="fpSpotTxEnd" type="u32" hint="">
+                    <value>10</value>
+                    <range>0,50</range>
+                </param>
+
+                <param name="fpSpotRadius" type="u32" hint="">
+                    <value>1696</value>
+                    <range>0,2500</range>
+                </param>
+
+                <param name="pixelDis" type="u32" hint="">
+                    <value>395</value>
+                    <range>0,500</range>
+                </param>
+
+                <param name="pixelDisFactor" type="u32" hint="">
+                    <value>100</value>
+                    <range>0,250</range>
+                </param>
+
+                <param name="pixelDisFloatFactor" type="u32" hint="">
+                    <value>105</value>
+                    <range>0,250</range>
+                </param>
+
+                <param name="rouletteRatio" type="u32" hint="">
+                    <value>23</value>
+                    <range>0,100</range>
+                </param>
+
+                <param name="pixelPitchUsed" type="u32" hint="">
+                    <value>564</value>
+                    <range>0,2500</range>
+                </param>
+
+                <param name="noiseLength" type="u32" hint="">
+                    <value>1199</value>
+                    <range>0,10000</range>
+                </param>
+
+                <param name="fingerLength" type="u32" hint="">
+                    <value>2256</value>
+                    <range>0,10000</range>
+                </param>
+
+                <param name="relockLength" type="u32" hint="">
+                    <value>1058</value>
+                    <range>0,10000</range>
+                </param>
+
+                <param name="liftLockLength" type="u32" hint="">
+                    <value>1410</value>
+                    <range>0,10000</range>
+                </param>
+
+
+                <param name="disOffsetCutThd" type="u32" hint="">
+                    <value>60</value>
+                    <range>0,10000</range>
+                </param>
+
+                <param name="disOffsetCutCoef" type="u32" hint="">
+                    <value>10</value>
+                    <range>0,255</range>
+                </param>
+
+                <param name="rxNumUse" type="u32" hint="">
+                    <value>39</value>
+                    <range>0,50</range>
+                </param>
+
+                <param name="txNumUse" type="u32" hint="">
+                    <value>18</value>
+                    <range>0,50</range>
+                </param>
+
+                <param name="maxMappingX" type="u32" hint="">
+                    <value>20224</value>
+                    <range>0,30000</range>
+                </param>
+
+                <param name="maxMappingY" type="u32" hint="">
+                    <value>44480</value>
+                    <range>0,60000</range>
+                </param>
+
+                <param name="rowGain" type="u32" hint="">
+                    <value>256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256</value>
+                    <range>0,1000</range>
+                </param>
+
+                <param name="colGain" type="u32" hint="">
+                    <value>256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256,256</value>
+                    <range>0,1000</range>
+                </param>
+
+            </modules>
+
+            <modules id="LogLevel" enable="true" hint="">
+                <param name="paramLogLevel" type="u32" hint="">
+                    <value>0</value>
+                    <range>0,10</range>
+                </param>
+            </modules>
+
+            <modules id="FeatureEn" enable="true" hint="">
+                <param name="WATER_ENABLE" type="u32" hint="">
+                    <value>1</value>
+                    <range>0,1</range>
+                </param>
+
+                <param name="ANTI_MISTOUCH_ENABLE" type="u32" hint="">
+                    <value>1</value>
+                    <range>0,1</range>
+                </param>
+
+                <param name="FP_ENABLE" type="u32" hint="">
+                    <value>1</value>
+                    <range>0,1</range>
+                </param>
+
+                <param name="HARD_PRESSURE_ENABLE" type="u32" hint="">
+                    <value>0</value>
+                    <range>0,1</range>
+                </param>
+
+                <param name="NOISE_ENABLE" type="u32" hint="">
+                    <value>1</value>
+                    <range>0,1</range>
+                </param>
+
+                <param name="TEMPERATURE_PROC_EN" type="u32" hint="">
+                    <value>1</value>
+                    <range>0,1</range>
+                </param>
+
+                <param name="GAME_TOUCH_OPT_EN" type="u32" hint="">
+                    <value>1</value>
+                    <range>0,1</range>
+                </param>
+
+                <param name="ROW_GAIN_EN" type="u32" hint="">
+                    <value>0</value>
+                    <range>0,1</range>
+                </param>
+
+                <param name="COL_GAIN_EN" type="u32" hint="">
+                    <value>0</value>
+                    <range>0,1</range>
+                </param>
+
+                <param name="PIXEL_GAIN_EN" type="u32" hint="">
+                    <value>0</value>
+                    <range>0,1</range>
+                </param>
+
+                <param name="NOTCH_GAIN_EN" type="u32" hint="">
+                    <value>1</value>
+                    <range>0,1</range>
+                </param>
+            </modules>
+            <modules id="AFT" enable="true" hint="">
+                <param name="sensorRatioThd" type="u32" hint="">
+                    <value>10</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="sensorWidthThd" type="u32" hint="">
+                    <value>30</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="secondEdgeNoneSumCoef" type="u32" hint="">
+                    <value>31000</value>
+                    <range>0,65535</range>
+                </param>
+                <param name="neighborNodeThd" type="u32" hint="">
+                    <value>60</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="aftTxDirNodeNumThd" type="u32" hint="">
+                    <value>5</value>
+                    <range>0,1000</range>
+                </param>
+                <param name="aftPosNodeThd" type="u32" hint="">
+                    <value>85</value>
+                    <range>0,1000</range>
+                </param>
+            </modules>
+
+        </panel>
+
+    </device>
+</algo>
