@@ -803,6 +803,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/aston/proprietary/odm/etc/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel.dat:$(TARGET_COPY_OUT_ODM)/etc/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel.dat \
     vendor/oneplus/aston/proprietary/odm/etc/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel.fw:$(TARGET_COPY_OUT_ODM)/etc/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel.fw \
     vendor/oneplus/aston/proprietary/odm/etc/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_ODM)/etc/irissoft_AA551_P_3_A0004_dsc_cmd_mode_panel.xml \
+    vendor/oneplus/aston/proprietary/odm/etc/libnfc-mtp-SN220.conf_23801:$(TARGET_COPY_OUT_ODM)/etc/libnfc-mtp-SN220.conf_23801 \
+    vendor/oneplus/aston/proprietary/odm/etc/libnfc-mtp-SN220.conf_23861:$(TARGET_COPY_OUT_ODM)/etc/libnfc-mtp-SN220.conf_23861 \
     vendor/oneplus/aston/proprietary/odm/etc/lvacfs_params/2mic/LVACFS_Calibration360_2mic.dat:$(TARGET_COPY_OUT_ODM)/etc/lvacfs_params/2mic/LVACFS_Calibration360_2mic.dat \
     vendor/oneplus/aston/proprietary/odm/etc/lvacfs_params/2mic/LVACFS_Configuration.txt:$(TARGET_COPY_OUT_ODM)/etc/lvacfs_params/2mic/LVACFS_Configuration.txt \
     vendor/oneplus/aston/proprietary/odm/etc/lvacfs_params/2mic/LVACFS_Parameter_ID10_MIC_VR.txt:$(TARGET_COPY_OUT_ODM)/etc/lvacfs_params/2mic/LVACFS_Parameter_ID10_MIC_VR.txt \
@@ -961,7 +963,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/aston/proprietary/vendor/etc/display/qdcm_calib_data_AA551_P_3_A0004_dsc_cmd_mode_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_AA551_P_3_A0004_dsc_cmd_mode_panel.json \
     vendor/oneplus/aston/proprietary/vendor/etc/init/vendor.qti.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.camera.provider-service_64.rc \
     vendor/oneplus/aston/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
-    vendor/oneplus/aston/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     vendor/oneplus/aston/proprietary/vendor/etc/ltm_config_AA551_P_3_A0004_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_AA551_P_3_A0004_dsc_cmd_mode_panel.xml \
     vendor/oneplus/aston/proprietary/vendor/lib64/camera/arcsoft_calibration_uw.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_calibration_uw.bin \
     vendor/oneplus/aston/proprietary/vendor/lib64/camera/arcsoft_calibration_wt.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_calibration_wt.bin \
