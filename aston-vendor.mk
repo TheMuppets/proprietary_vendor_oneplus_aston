@@ -960,6 +960,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/aston/proprietary/odm/vendor/firmware/uff_spi.b07:$(TARGET_COPY_OUT_ODM)/vendor/firmware/uff_spi.b07 \
     vendor/oneplus/aston/proprietary/odm/vendor/firmware/uff_spi.b08:$(TARGET_COPY_OUT_ODM)/vendor/firmware/uff_spi.b08 \
     vendor/oneplus/aston/proprietary/odm/vendor/firmware/uff_spi.mdt:$(TARGET_COPY_OUT_ODM)/vendor/firmware/uff_spi.mdt \
+    vendor/oneplus/aston/proprietary/product/etc/permissions/privapp-permissions-euiccgoogle.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-euiccgoogle.xml \
     vendor/oneplus/aston/proprietary/vendor/etc/display/qdcm_calib_data_AA551_P_3_A0004_dsc_cmd_mode_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_AA551_P_3_A0004_dsc_cmd_mode_panel.json \
     vendor/oneplus/aston/proprietary/vendor/etc/init/vendor.qti.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.camera.provider-service_64.rc \
     vendor/oneplus/aston/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
@@ -1333,6 +1334,7 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.cammidasservice-V1-ndk \
     vendor.oplus.hardware.sendextcamcmd-V1-service-impl \
     vendor.oplus.hardware.sendextcamcmd-V2-ndk \
+    EuiccGoogle \
     vendor.qti.camera.aon-impl-1.3.xml \
     vendor.qti.camera.postproc-impl.xml \
     vendor.qti.camera.provider.xml \
