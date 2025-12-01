@@ -965,6 +965,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/aston/proprietary/vendor/etc/init/vendor.qti.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.camera.provider-service_64.rc \
     vendor/oneplus/aston/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/oneplus/aston/proprietary/vendor/etc/ltm_config_AA551_P_3_A0004_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_AA551_P_3_A0004_dsc_cmd_mode_panel.xml \
+    vendor/oneplus/aston/proprietary/vendor/firmware/sn220u.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sn220u.bin \
     vendor/oneplus/aston/proprietary/vendor/lib64/camera/arcsoft_calibration_uw.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_calibration_uw.bin \
     vendor/oneplus/aston/proprietary/vendor/lib64/camera/arcsoft_calibration_wt.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_calibration_wt.bin \
     vendor/oneplus/aston/proprietary/vendor/lib64/camera/arcsoft_dc_calibration_t.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_dc_calibration_t.bin \
@@ -1137,7 +1138,6 @@ PRODUCT_PACKAGES += \
     libqsegnet \
     libqshcamera \
     libsfeShiftExtrapolation \
-    libsn220u_fw \
     libswregistrationalgo \
     libsynx \
     libtfestriping \
