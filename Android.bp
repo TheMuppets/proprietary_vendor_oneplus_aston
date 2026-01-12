@@ -12305,6 +12305,15 @@ prebuilt_etc_xml {
     device_specific: true,
 }
 
+prebuilt_etc_xml {
+    name: "manifest_secure_element.xml",
+    owner: "oneplus",
+    src: "proprietary/odm/etc/vintf/manifest/manifest_secure_element.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
+}
+
 cc_prebuilt_binary {
     name: "vendor.qti.camera.provider-service_64",
     owner: "oneplus",
