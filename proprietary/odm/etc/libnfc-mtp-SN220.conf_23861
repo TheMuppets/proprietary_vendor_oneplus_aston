@@ -515,6 +515,9 @@ NXP_RF_CONF_BLK_13={
 	      A0,   68,   2A,   06,   40,   60,   03,   19,   14,   00,   00,   00,   8A,   24,   00,   C2,   01,   00,   0F,   FF,   7F,   00,   0F,   FF,   7F,   A0,   00,   03,   FA,   00,   00,   00,   4C,   00,   14,   00,   42,   00,   05,   42,   00,   00,   03,   00,   03
 }
 
+NXP_RF_CONF_BLK_14={
+	      2F,   0C,   02,   05,   0F
+}
 
 ###############################################################################
 # Core configuration rf field filter settings to enable set to 01 to disable set
@@ -551,7 +554,7 @@ NXP_RF_CONF_BLK_13={
 #
 #add 2021-11-15:A1,   13,   01,   32 -- By default in FW it was set to 2ms, but we found out that it needs to be increased to 5ms (32=3*16+2)
 ##This config defines a guard time between Mailbox deactivation and activation that is needed to overcome a Race-condition in the JCOP Mailbox activation when a previous deactivation is not fully completed.
-NXP_CORE_CONF_EXTN={20, 02, 6E, 0D,
+NXP_CORE_CONF_EXTN={20, 02, 73, 0E,
     A0, 09, 02, E8, 03,
     A1, 34, 01, 04,
     A0, 07, 01, 01,
@@ -564,7 +567,8 @@ NXP_CORE_CONF_EXTN={20, 02, 6E, 0D,
     A0, 11, 07, 04, 80, 32, 01, C8, 00, 00,
 	A0, 85, 04, 78, 88, AA, 2C,
 	A0, 28, 26, 00, 00, 00, 00, FB, 50, 00, 00, B0, FF, 00, A0, 00, 00, 60, FF, 00, F0, 00, 00, 10, FF, 00, 40, 01, 00, C0, FE, 00, D0, 01, 00, 08, 02, 00, F8, FD, 00,
-	A1, 48, 0A, 01, 00, 04, 10, 03, 03, 4C, 04, C8, 00
+	A1, 48, 0A, 01, 00, 04, 10, 03, 03, 4C, 04, C8, 00,
+    A1, 4A, 02, 65, 6D
 }
 #       A0, B8, 01, 01, //enable apdu logging
 #       A0, 1D, 01, 11, //enable L1 and L2 Lx_debug 
@@ -597,7 +601,7 @@ NXP_CORE_CONF_EXTN={20, 02, 6E, 0D,
 #    then change FWT from 4.8ms to 38.7ms.
 #    TB1: high nibble 4bits is FWI, low nibble 4bits is SFGI.
 NXP_CORE_CONF={ 20, 02, 3A, 13,
-        00, 02, F4, 01,
+        00, 02, 64,  00,
         18, 01, 01,
         21, 01, 00,
         28, 01, 00,

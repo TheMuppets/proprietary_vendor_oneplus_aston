@@ -462,6 +462,7 @@
         "app_enable_rio": true,
         "app_disable_fb_activity": [
             "com.whatsapp.camera.CameraActivity",
+            "com.whatsapp.camera.ui.CameraActivity",
             "com.whatsapp.qrcode.contactqr.ContactQrActivity",
             "com.whatsapp.statuscomposer.ConsolidatedStatusComposerActivity",
             "com.whatsapp.status.composer.ConsolidatedStatusComposerActivity"
@@ -494,6 +495,18 @@
     "com.tencent.wework.multitalk.controller.VoipCallActivity": {
         "minVideoCallFps": 15,
         "maxVideoCallFps": 15
+    },
+    "com.shuru.nearme": {
+        "needMatchPkgName": true,
+        "resolutionFilterForNotAddSizeAPI1": [
+            "1920x1080",
+            "2304x1296",
+            "2560x1440",
+            "2160x1080",
+            "2412x1080",
+            "2520x1080",
+            "2780x1264"
+        ]
     },
     "com.skype.raider": {
         "needLimitFpsForAPI1": true

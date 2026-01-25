@@ -123,8 +123,8 @@
         <param key="ocar_mode_support" value="true"/>
         <param key="speaker_ringtone_ckv" value="true"/>
         <param key="speaker_auto_calibration" value="true"/>
-        <!-- Zhao.Pan@MULTIMEDIA.AUDIODRIVER.FEEDBACK, 2023/11/29, add for audio daemon -->
-        <param key="oplus_audio_daemon_agm" value="true"/>
+	<!-- Zhao.Pan@MULTIMEDIA.AUDIODRIVER.FEEDBACK, 2023/11/29, add for audio daemon -->
+	<param key="oplus_audio_daemon_agm" value="true"/>
     </config_params>
     <config_volume>
         <use_volume_set_param>1</use_volume_set_param>
