@@ -5,6 +5,7 @@
 soong_namespace {
     imports: [
         "hardware/oplus",
+        "hardware/pixelworks/interfaces",
         "hardware/qcom-caf/sm8550",
         "vendor/oneplus/sm8550-common",
         "vendor/qcom/opensource/display",
@@ -7550,6 +7551,40 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.pixelworks.hardware.display@1.0-impl-1.2-i7",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/hw/vendor.pixelworks.hardware.display@1.0-impl-1.2-i7.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libhardware",
+                "libhidlbase",
+                "libutils",
+                "vendor.pixelworks.hardware.display@1.0",
+                "vendor.pixelworks.hardware.display@1.1",
+                "vendor.pixelworks.hardware.display@1.2",
+                "libpwirisservicei7",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.pixelworks.hardware.display@1.0-impl-1.2-i7p",
     owner: "oneplus",
     strip: {
@@ -11496,6 +11531,226 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libpwirisIoctlWrapper",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libpwirisIoctlWrapper.so",
+            ],
+            shared_libs: [
+                "libdrm",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libpwirisPCS",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libpwirisPCS.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libpwiriscalibrate",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libpwiriscalibrate.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libpwsoftirisPCS",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libpwirisfeature",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libpwirisfeature.so",
+            ],
+            shared_libs: [
+                "vendor.pixelworks.hardware.feature-V1-ndk",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libhidlbase",
+                "libbase",
+                "libbinder_ndk",
+                "vendor.pixelworks.hardware.feature@1.0",
+                "vendor.pixelworks.hardware.feature@1.1",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libpwirishalwrapper",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libpwirishalwrapper.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "android.hardware.graphics.common@1.2",
+                "libhardware",
+                "libsdmcore",
+                "libpwirisfeature",
+                "libhidlbase",
+                "libhidltransport",
+                "vendor.pixelworks.hardware.display@1.0",
+                "vendor.pixelworks.hardware.display@1.1",
+                "vendor.pixelworks.hardware.display@1.2",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libpwirispq",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libpwirispq.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libpwirisservicei7",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libpwirisservicei7.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libhardware",
+                "libhidlbase",
+                "libpwirisIoctlWrapper",
+                "libpwirispq",
+                "libpwirisPCS",
+                "libpwiriscalibrate",
+                "libpwirisfeature",
+                "libqdMetaData",
+                "libgrallocutils",
+                "android.hardware.graphics.common@1.2",
+                "libbinder",
+                "libsdmcore",
+                "libqservice",
+                "libqdutils",
+                "libhidltransport",
+                "vendor.pixelworks.hardware.display@1.0",
+                "vendor.pixelworks.hardware.display@1.1",
+                "vendor.pixelworks.hardware.display@1.2",
+                "vendor.pixelworks.hardware.feature@1.0",
+                "vendor.pixelworks.hardware.feature@1.1",
+                "libprocessgroup",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libpwirisservicei7p",
     owner: "oneplus",
     strip: {
@@ -11534,6 +11789,60 @@ cc_prebuilt_library_shared {
                 "android.hidl.memory@1.0",
                 "libhidlmemory",
                 "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libpwirissoft",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libpwirissoft.so",
+            ],
+            shared_libs: [
+                "libsnapdragoncolor-pxlw",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libhardware",
+                "android.hardware.graphics.common@1.1",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libpwsoftirisPCS",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libpwsoftirisPCS.so",
+            ],
+            shared_libs: [
+                "liblog",
                 "libc",
                 "libm",
                 "libdl",
@@ -11739,6 +12048,33 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsnapdragoncolor-pxlw",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libsnapdragoncolor-pxlw.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -12419,6 +12755,24 @@ prebuilt_etc_xml {
     device_specific: true,
 }
 
+prebuilt_etc_xml {
+    name: "vendor.pixelworks.hardware.display@1.2.xml",
+    owner: "oneplus",
+    src: "proprietary/odm/etc/vintf/manifest/vendor.pixelworks.hardware.display@1.2.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.pixelworks.hardware.feature.irisfeature-service.xml",
+    owner: "oneplus",
+    src: "proprietary/odm/etc/vintf/manifest/vendor.pixelworks.hardware.feature.irisfeature-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
+}
+
 cc_prebuilt_binary {
     name: "vendor.qti.camera.provider-service_64",
     owner: "oneplus",
@@ -12501,5 +12855,67 @@ cc_prebuilt_binary {
     },
     prefer: true,
     relative_install_path: "hw",
+    device_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.pixelworks.hardware.feature.irisfeature-service",
+    owner: "oneplus",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libhidlbase",
+                "vendor.pixelworks.hardware.feature@1.0",
+                "vendor.pixelworks.hardware.feature@1.1",
+                "libpwirisfeature",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    device_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "irisConfig",
+    owner: "oneplus",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/bin/irisConfig",
+            ],
+            shared_libs: [
+                "libutils",
+                "liblog",
+                "libpwirishal",
+                "libpwirisfeaturehal",
+                "vendor.pixelworks.hardware.display@1.1",
+                "vendor.pixelworks.hardware.feature@1.1",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
     device_specific: true,
 }
