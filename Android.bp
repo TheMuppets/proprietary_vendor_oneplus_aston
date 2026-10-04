@@ -12686,6 +12686,7 @@ cc_prebuilt_binary {
                 "android.frameworks.stats-V1-ndk",
                 "libbinder_ndk",
                 "libutils",
+                "libcutils",
                 "libcamera_metadata",
                 "libhardware",
                 "liblog",
