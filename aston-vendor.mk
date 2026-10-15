@@ -1374,3 +1374,7 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.cammidasservice-V1-service \
     vendor.pixelworks.hardware.feature.irisfeature-service \
     irisConfig
+
+PRODUCT_COPY_FILES += \
+    vendor/oneplus/aston/proprietary/odm/etc/temperature_profile/sys_thermal_control_config.xml:$(TARGET_COPY_OUT_ODM)/etc/temperature_profile/sys_thermal_control_config.xml \
+    vendor/oneplus/aston/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
